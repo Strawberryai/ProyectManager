@@ -1,2 +1,2 @@
-# ignore all node_modules
+# ignore all node_modules to save space
 node_modules/

@@ -1,2 +1,2 @@
-# ignore all nore_modules
-nore_modules/
+# ignore all node_modules
+node_modules/

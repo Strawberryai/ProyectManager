@@ -6,6 +6,10 @@ This a web focused project manager. It takes all the project ins the *projects* 
 
 The main purpose of this project is to make it easier to develop fast test to try something related with scrpting.
 
+# Start the app
+
+`npm start`
+
 ## Future features
 
 - Locate different projects on other folders or git
@@ -16,4 +20,4 @@ The main purpose of this project is to make it easier to develop fast test to tr
 
 ## Install dependencies
 
-`npm i express handlebars fs mark-down-it`
+`npm i express handlebars fs markdown-it`

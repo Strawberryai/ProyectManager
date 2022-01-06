@@ -14,9 +14,9 @@ The main purpose of this project is to make it easier to develop fast test to tr
 - Support for scripting in java
 - Support for scripting in kotlin
 
-## Dependencies
+## Install dependencies
 
-- express `npm i express`
-- handlebars `npm i handlebars`
-- fs `npm i fs`
-- mark-down-it `npm i mark-down-it`
+- `npm i express`
+- `npm i handlebars`
+- `npm i fs`
+- `npm i mark-down-it`

@@ -1,0 +1,29 @@
+<div id="projs-wrapper">
+    {{#each list}}
+    
+    <div id="proj">
+        <header id="proj-title">
+            <h1 onclick="updateDesc({{this.proj}})">{{this.proj}}</h1>
+            <!--<a href="{{this.url}}"><i class="fas fa-external-link-alt"></i></a>-->
+            <i class="fas fa-chevron-down" onclick="updateDesc({{this.proj}})" style="transform: rotate(180deg);"></i>
+        </header>
+        <div id="{{this.proj}}" class="proj-body" data-collapsed="false">            
+            {{#if this.hasDesc}}
+                    {{{this.desc}}}
+            {{else}}
+                    <p>This project doesn't have a description</p>
+            {{/if}}
+            
+            <h2>Project Tree</h2>
+            <div id="tree"></div>
+
+            <a id="a-button">
+                <button id="proj-button" onclick="buttonRedir({{this.proj}}, '{{this.htmlUrl}}')">
+                <i class="fas fa-external-link-alt" style="font-size: 1em; padding-right: 0.25em;"></i>
+                <span>REDIRECT</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>

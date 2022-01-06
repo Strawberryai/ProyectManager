@@ -1,0 +1,20 @@
+:root{
+    font-size: 16px;
+    font-family: open sans,sans-serif;
+    --tx-pr: #e2e2eb;
+    --tx-sc: #26262b;
+    
+    --bg-pr: #33323f;
+    --bg-sc: #26262b;
+    --bg-th: #ffffff;
+}
+body{
+    background-color: var(--bg-pr);
+    margin: 0;
+}
+#mycanvas{
+    background-color: var(--bg-th);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

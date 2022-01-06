@@ -1,0 +1,26 @@
+{
+  "name": "averagecolor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliOlixx/AverageColor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliOlixx/AverageColor/issues"
+  },
+  "homepage": "https://github.com/AliOlixx/AverageColor#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "fs": "0.0.1-security",
+    "markdown-it": "^12.3.0"
+  }
+}

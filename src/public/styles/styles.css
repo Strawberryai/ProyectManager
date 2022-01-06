@@ -1,0 +1,213 @@
+:root{
+    font-size: 16px;
+    font-family: open sans,sans-serif;
+    --tx-pr: #e2e2eb;
+    --tx-sc: #26262b;
+    
+    --bg-pr: #33323f;
+    --bg-sc: #26262b;
+    --bg-th: #ffffff;
+    
+    --col-pr: #1eb980;    
+    --col-sc: #dc2663;
+    --col-th: #72deff;
+}
+
+body{
+    background: var(--bg-pr);
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+blockquote{
+    border-left: 3px solid var(--col-pr);
+    padding-left: 0.5em;
+    font-style: italic;
+}
+
+pre{
+    width: calc(100% - 1.5em);
+    background-color: var(--tx-pr);
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    pre {
+        font-size: 0.5em;
+    }
+}
+
+#projs-wrapper{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    display: flexbox;
+}
+
+#proj{
+    padding-bottom: 0.5em;
+    display: block;
+}
+
+#proj h3{
+    margin-top: 0;
+}
+
+#proj-title{
+    background: var(--bg-sc);
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+    color: var(--tx-pr);
+}
+#proj-title h1 {
+    flex: auto;
+    margin: 0;
+    padding: 0.25em 0em 0.25em 0em;
+}
+
+#proj-title a {
+    color: var(--tx-pr);
+}
+
+#proj-title i {
+    width: min-content;
+    padding: 1em;    
+    vertical-align: middle;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.proj-body{
+    background: var(--bg-th);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    border-top: solid 3px var(--col-sc);
+    color: var(--tx-sc);
+    overflow:hidden;
+    transition:height 0.3s ease-out;
+    height:auto;
+}
+
+.proj-body p{
+    width: calc(100% - 1.5em);
+}
+
+#tree{
+    width: calc(100% - 1.5em);
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.2rem;
+}
+
+#tree ul{
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+}
+
+#tree ul li{
+    position: relative;
+    padding-left: 15px;
+}
+
+#tree ul li::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    top: 7px;
+    left: 0;
+    height: 1px;
+    margin: auto;
+    background-color: var(--bg-sc);
+}
+
+#tree ul li::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: auto;
+    background-color: var(--bg-sc);
+}
+
+#tree ul li:last-child::after{
+    height: 7px;
+}
+
+#tree i{
+    color: var(--col-pr);
+    padding-right: 0.2em;
+}
+
+#proj-button{
+    background-color: var(--bg-th);
+    position: relative;
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 0.25rem;
+    border: 1px solid var(--col-pr);
+    color: var(--col-pr);
+    outline: 0;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transform: scale(0);
+    animation: ripple 0.4s linear;
+    background-color: var(--col-pr);
+}
+
+@keyframes ripple {
+    from{
+        transform: scale(0);
+        opacity: 0.7;
+    }
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.title{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.show{
+    display: block;
+    animation: inBlockAnimation 2s forwards;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes inBlockAnimation{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: min-content;
+    }
+}

@@ -16,7 +16,4 @@ The main purpose of this project is to make it easier to develop fast test to tr
 
 ## Install dependencies
 
-- `npm i express`
-- `npm i handlebars`
-- `npm i fs`
-- `npm i mark-down-it`
+`npm i express handlebars fs mark-down-it`

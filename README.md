@@ -2,9 +2,9 @@
 
 ## Description
 
-This a web focused project manager. It takes all the project ins the *projects* directory and organizes them so you can access by *localhost:8000* port.
+This a web focused project manager. It takes all the project inside the *projects* directory and organizes them so you can access by *localhost:8000* port.
 
-The main purpose of this project is to make it easier to develop fast test to try something related with scrpting.
+The main purpose of this project is to make it easier to develop fast tests to try something related with scrpting.
 
 # Start the app
 
@@ -15,8 +15,6 @@ The main purpose of this project is to make it easier to develop fast test to tr
 - Locate different projects on other folders or git
 - Adding a tool for scripting on the web
 - Support for scripting in javascript
-- Support for scripting in java
-- Support for scripting in kotlin
 
 ## Install dependencies
 
